@@ -36,9 +36,7 @@ public class Ex02 extends HttpServlet {
 		out.println("<body>");
 		out.println("<h1>오늘 날짜는?</h1>");
 		out.println("<h3>오늘 날짜는?" + year + "년" + month + "월" + day + "일 입니다.</h3>");
-		
 		out.println("</body>");
 		out.println("</html>");
 	}
-
 }

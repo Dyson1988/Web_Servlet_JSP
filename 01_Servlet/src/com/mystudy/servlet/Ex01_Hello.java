@@ -19,7 +19,6 @@ public class Ex01_Hello extends HttpServlet {
     	한 번 로딩된 후에는 재실행되지 않음
     	두 번째 URL 요청부터는 service() 메소드 실행
     	 */
-        super();
         System.out.println(">>> 생성자 실행");
         
     }
@@ -53,7 +52,6 @@ public class Ex01_Hello extends HttpServlet {
 		//get 방식 요청이 있을 때 호출되는 메소드
 		//request : 요청정보 (클라이언트 정보)
 		//response : 응답정보(요청에 따른 결과를 전달할 정보)
-		
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		System.out.println(">> doGet() 실행");
 	}
@@ -61,9 +59,7 @@ public class Ex01_Hello extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println(">> doPost() 실행");
 		//doGet(request, response);
-		
 	}
-
 }
 
 
